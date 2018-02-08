@@ -50,39 +50,36 @@ table {
 
 main {
 	background-color: white;
-	margin: 0 0 0 5vw;
+	margin: 0 0 0 4em;
 }
 
-/* Nav */
+/* SHAPKA */
 
 header {
 	padding: 1em 4em;
 	position: relative;
 }
-
 h1 {
 	width: calc(15% - 4px);
 	display: inline-block;
 	vertical-align: middle;
 }
-
+.logo img {
+	width: 8em;
+}
 nav {
-	width: calc(80% - 4px);
+	width: calc(85% - 4px);
 	display: inline-block;
 	vertical-align: middle;
-	text-align: right;
 }
 nav ul {
-	text-align: right;
 	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
 }
 nav li {
-	text-align: right;
-	flex-direction: row;
-	padding: 0 1em;
-	align-items: flex-end;
+	padding: 0.5em 1em;
 }
-
 nav a {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -94,12 +91,8 @@ nav a:hover {
 }
 
 
-.logo img {
-	width: 100%;
-}
-
-/* POEHALI */
-
+/* FORMA */
+/* SHAPKA VERHNYA */
 .wrap-1 {
 	margin: 0 2em;
 	padding: 2em 0;
@@ -108,10 +101,11 @@ nav a:hover {
 .wrap-1 h2 {
 	text-transform: uppercase;
 	color: #aaa;
-	word-spacing: 2px;
+	word-spacing: 3px;
 	font-size: 1.4em;
 }
 
+/* SAMA FORMA*/
 .form-wrap {
 	padding: 2em;
 	position: relative;
@@ -140,22 +134,32 @@ h3 {
 	line-height: 2em;
 	background-color: #e76e53;
 	margin-bottom: 1em;
+	text-overflow: clip;
 }
-h3:after {
+.lenta {
+	overflow: hidden;
+	position: relative;}
+.lenta:after {
 	content: '';
+	right: 0;
+	top: 0;
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 2em 20px 2em 0;
+	border-width: 1.3em 12px 1.3em;
 	border-color: transparent white transparent transparent;
+	position: absolute;
 }
-h3:before {
+.lenta:before {
 	content: '';
+	left: 0;
+	top: 0;
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 2em 0 2em 20px;
+	border-width: 1.3em 0 1.3em 12px;
 	border-color: transparent transparent transparent white;
+	position: absolute;
 }
 
 .form p {
