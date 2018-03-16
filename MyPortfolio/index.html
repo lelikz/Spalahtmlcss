@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,500,700" rel="stylesheet">
+  </head>
+
+  <body>
+    <a name="top"></a>
+
+    <header>
+      <!-- LOGO & NAV -->
+      <div class="logo-nav">
+        <!-- LOGO -->
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="img/main/logo.png" alt="">
+          </a>
+        </h1>
+        <!-- NAVIGTION -->
+        <nav>
+          <ul>
+            <li><a href="../myportfolio/index.html">Who I Am</a></li>
+            <li><a href="../myportfolio/pages/works.html">Works</a></li>
+            <li><a href="../myportfolio/pages/projects.html">Projects</a></li>
+            <li><a href="../myportfolio/pages/blog.html">Blog</a></li>
+            <li><a href="../myportfolio/pages/about.html">About</a></li>
+            <li><a href="../myportfolio/pages/contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="title-wrp">
+         <h2 class="title">My Portfolio</h2>
+      </div>
+    </header>
+
+    <main>
+
+        <!-- Who we are -->
+        <section class="weare">
+              <h4>Who we Are</h4>
+              <h3>Tell The World About Yourself</h3>
+              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc, fiant sollemnes in futurum.</p>
+              <div class="button">
+                  <a href="../myportfolio/pages/about.html">Read More About Us</a>
+              </div>
+        </section>
+
+        <!-- What We Do -->
+        <section class="wedo">
+              <h4>What We Do</h3>
+              <h3>Show Your Amazing Work</h2>
+              <ul>
+                  <li class="port1"></li>
+                  <li class="port2"></li>
+                  <li class="port3"></li>
+                  <li class="port4"></li>
+                  <li class="port5"></li>
+                  <li class="port6"></li>
+                  <li class="port7"></li>
+                  <li class="port8"></li>
+              </ul>
+        </section>
+
+        <section class="team">
+            <h4>Our team</h4>
+            <h3>The Amazing People Behind This</h3>
+            <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+            <ul>
+                <li>
+                    <div class="team1"></div>
+                    <div class="description">
+                        <h4>ceo</h4>
+                        <h5>Tobias Schneider</h5>
+                        <p>Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="team2"></div>
+                    <div class="description">
+                        <h4>Designer</h4>
+                        <h5>Jack Knife</h5>
+                        <p>Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="team3"></div>
+                    <div class="description">
+                        <h4>Developer</h4>
+                        <h5>Ricki Hall</h5>
+                        <p>Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="lastpost">
+              <h4>Last Post</h4>
+              <h3>We Like to Write</h3>
+              <div class="blogpost">
+                  <div class="b_photo"></div>
+                  <div class="post_content">
+                      <p class="post_date">14 September 2014</p>
+                      <p class="post_title">Change Your Space</p>
+                      <p class="post_text">Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores.</p>
+                      <div class="post_button">
+                          <a href="../myportfolio/pages/blog.html">Read</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="button">
+                  <a href="../myportfolio/pages/blog.html">More From Our Blog</a>
+              </div>
+        </section>
+
+        <section class="contacts">
+              <h4>Contact Us</h4>
+              <h3>Work With Us</h3>
+
+              <div id="map"></div>
+              <script type="text/javascript">
+                  function myMap() {
+                      var mapOptions = {
+                          center: new google.maps.LatLng(49.999, 36.243),
+                          zoom: 13,
+                          mapTypeId: google.maps.MapTypeId.ROADMAP
+                      }
+                  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                  }
+              </script>
+              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6TngOK4t6TdIDO5J-G75x51tN2IPRAPM&callback=myMap">
+              </script>
+
+              <div class="undermap">
+                  <ul>
+                      <li>
+                          <h5>Location</h5>
+                          <p>198 West 21th Street,</br>New York, NY 10010</p>
+                      </li>
+                      <li>
+                          <h5>Phone</h5>
+                          <p>+88 (0) 101 0000000</br>+88 (0) 101 0000000</p>
+                      </li>
+                      <li>
+                          <h5>Fax</h5>
+                          <p>+88 (0) 202 0000000</br>+88 (0) 202 0000000</p>
+                      </li>
+                      <li>
+                          <h5>email</h5>
+                          <p>elegant@elegant.com</br>commercial@elegant.com</p>
+                      </li>
+                  </ul>
+              </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2014 Designed and Developed by Diogo Dantas</p>
+        <p>Email: imdiogodantas@gmail.com</p>
+    </footer>
+
+  </body>
+</html>
