@@ -50,6 +50,17 @@ nav a {
 	font-family: 'Fredericka the Great', cursive;
 	color: white;
 	font-size: 8em;
+	animation: my_1 2s 1 ease-out;
+}
+
+@keyframes my_1 {
+    0%   { opacity: 0;
+					 transform: scale(0.5) translateY(200px);
+					 transform: ;
+						}
+    100% { opacity: 1;
+			transform: scale(1) translateY(0px);
+		  	 	 }
 }
 
 .weare {
@@ -88,11 +99,20 @@ h3 {
 		align-items: center;
 		border: 1px solid rgba(2, 23, 37, 0.5);
 		border-radius: 4px;
+		background-color: white;
+		transition: all 0.5s linear;
+}
+.button:hover {
+		border: 1px solid #d4af37;
+		border-radius: 15px;
+		background-color: #d4af37;
 }
 .button a {
-		color: rgba(2, 23, 37, 0.5);
+		color: rgba(2, 23, 37, 0.8);
 		font: 300 0.9em/1em Montserrat, sans-serif;
 }
+
+
 
 /* We Do */
 .wedo {
@@ -246,14 +266,32 @@ h3 {
 		align-items: center;
 		border: 1px solid rgba(2, 23, 37, 0.5);
 		border-radius: 4px;
+		background-color: white;
+		transition: all 0.5s linear;
+}
+.post_button:hover {
+		border: 1px solid #d4af37;
+		border-radius: 15px;
+		background-color: #d4af37;
 }
 .post_button a {
-		color: rgba(2, 23, 37, 0.5);
+		color: rgba(2, 23, 37, 0.8);
 		font: 300 0.9em/1em Montserrat, sans-serif;
 }
 .lastpost .button {
 		margin-top: 3em;
 		margin-bottom: 6em;
+		border: 1px solid rgba(2, 23, 37, 0.5);
+		border-radius: 4px;
+		background-color: white;
+		transition: all 0.5s linear;
+}
+.lastpost .button:hover {
+		border: 1px solid #d4af37;
+		border-radius: 15px;
+		background-color: #d4af37;
+}
+
 }
 
 
@@ -338,6 +376,11 @@ footer p {
 	background-size: cover;
 	margin-bottom: 5em;
 }
+.header_projects > .logo-nav {
+	background-color: rgba(60, 60, 60, 0.45);
+	position: fixed;
+	width: 100%;
+}
 .project1 {
 	margin: 50px 70px;
   padding: 50px 60px;
@@ -412,6 +455,8 @@ footer p {
 }
 .header_blog .logo-nav {
 	background-color: rgba(60, 60, 60, 0.45);
+	position: fixed;
+	width: 100%;
 }
 .all_blogs {
 	margin: 50px 70px;
@@ -420,11 +465,14 @@ footer p {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
-.blog_column {
-	padding: 0 60px 0 0;
-	width: calc(100vw - 30vw - 160px);
-	margin-right: 60px;
+.blogs_column {
+		width: calc(100vw - 25vw - 200px);
+		margin-right: 60px;
+		display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .blog_column ul {
 		display: flex;
@@ -442,9 +490,9 @@ footer p {
 }
 .blog_post h3 {
 		color: rgba(2, 23, 37, 0.5);
-		font: 300 3em/1.8em Montserrat, sans-serif;
+		font: 300 3em/1.1em Montserrat, sans-serif;
 		text-align: left;
-		padding-bottom: 15px;
+		padding-bottom: 25px;
 }
 .post_date1 {
 		color: #d4af37;
@@ -459,14 +507,57 @@ footer p {
 		padding-bottom: 45px;
 }
 
-
+/* Blog menu right part */
 .blogs_menu {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-left: 60px;
 	padding-right: 60px;
-	width: calc(100vw - 30vw - 160px);
+	width: calc(100vw - 75vw - 200px);
+}
+.blogs_menu h2 {
+		margin-top: 1.5em;
+		padding-bottom: 0.4em;
+		margin-bottom: 1em;
+		color: rgba(2, 23, 37, 0.5);
+		font: 100 2em/1.1em Montserrat, sans-serif;
+		width: 100%;
+		border-bottom: 2px solid #d4af37;
+}
+.first {
+		margin-top: 0px !important;
+}
+.blogs_menu a {
+	display: inline-block;
+	width: 100%;
+	color: rgba(2, 23, 37, 0.5);
+	font: italic 300 1.2em/1.1em Montserrat, sans-serif;
+	margin-bottom: 0.8em;
+}
+.more-blogs-button {
+			text-align: center;
+			width: 250px;
+			height: 2.5em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid rgba(2, 23, 37, 0.5);
+			border-radius: 4px;
+			background-color: white;
+			transition: all 0.5s linear;
+	}
+.more-blogs-button:hover {
+			border: 1px solid #d4af37;
+			border-radius: 15px;
+			background-color: #d4af37;
+}
+.more-blogs-button a {
+			color: rgba(2, 23, 37, 0.8);
+			font: 500 1em/1em Montserrat, sans-serif;
+	}
+.blogs_menu img {
+		width: 100%;
+}
 
 
 /* header_about */
@@ -475,6 +566,57 @@ footer p {
 	background: url(../img/about/header_about.png) no-repeat center top;
 	background-size: cover;
 	margin-bottom: 5em;
+	-webkit-clip-path: polygon(0 0, 100vw 0, 100vw 90%, 0 100%);
+	clip-path: polygon(0 0, 100vw 0, 100vw 90%, 0 100%);
+}
+.header_about .logo-nav {
+	background-color: rgba(60, 60, 60, 0.4);
+	position: fixed;
+	width: 100%;
+}
+.text_about {
+	background-color: white;
+	margin: 30vh 30vw;
+}
+.text_about p {
+	text-align: center;
+	color: rgba(2, 23, 37, 0.8);
+	font: 300 1em/2em Montserrat, sans-serif;
+}
+.servises {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 3em;
+}
+.serv_image {
+		width: calc(50vw - 14px);
+		height: 70vh;
+		background: url(../img/about/meetup.png) no-repeat center top;
+		background-size: cover;
+}
+.serv_text {
+	width: calc(50vw - 4px - 120px);
+	height: calc(70vh - 100px);
+	background-color: #f9f9f9;
+	overflow: hidden;
+	padding: 50px 60px;
+}
+.serv_text h3 {
+		text-align: left;
+		padding-bottom: 1.5em
+}
+.flex_texts {
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: flex-start;
+}
+.flex_texts p {
+	width: 50%;
+ 	margin-right: 50px;
+	color: rgba(2, 23, 37, 0.8);
+	font: 300 1em/2em Montserrat, sans-serif;
 }
 
 
@@ -485,4 +627,70 @@ footer p {
 	background: url(../img/contacts/header_img.png) no-repeat center top;
 	background-size: cover;
 	margin-bottom: 5em;
+}
+.kubiki {
+		margin: 60px 20vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+}
+.lines {
+		margin: 50px 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+}
+.line1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 5px;
+}
+.line1 .small_text {
+		background-color: #d4af37;
+		padding: 40px;
+    width: calc(40% - 53px);
+    margin-right: 5px;
+    height: calc(25vw - 80px);
+}
+.white_line {
+		width: 35px;
+		height: 3px;
+		background-color: white;
+		margin-bottom: 3em;
+}
+.small_text p {
+	color: white;
+	font: 500 1.7em/1.2em Montserrat, sans-serif;
+}
+.line_image {
+	background: url(../img/contacts/houses.png) no-repeat center top;
+	background-size: cover;
+	width: calc(60% - 4px);
+	height: 25vw;
+}
+
+.line2 {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+}
+.line2 .small_text {
+		background-color: black;
+		padding: 40px;
+    width: calc(40% - 53px);
+    margin-left: 5px;
+    height: calc(25vw - 80px);
+}
+.line_image2 {
+		background-color: #f9f9f9;
+		width: calc(60% - 124px);
+		height: calc(25vw - 120px);
+		padding: 60px;
+}
+.line_image2 p {
+		color: rgba(2, 23, 37, 0.8);
+		font: 300 1.1vw/1.7em Montserrat, sans-serif;
 }

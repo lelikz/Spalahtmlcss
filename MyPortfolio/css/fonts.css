@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'leafy';
+  src: url('../fonts/leafy.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/leafy.otf')  format('opentype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+
+       @font-face {
+         font-family: "Flaticon";
+         src: url("../icon/Flaticon.eot");
+         src: url("../icon/Flaticon.eot?#iefix") format("embedded-opentype"),
+              url("../icon/Flaticon.woff") format("woff"),
+              url("../icon/Flaticon.ttf") format("truetype"),
+              url("../icon/Flaticon.svg#Flaticon") format("svg");
+         font-weight: normal;
+         font-style: normal;
+       }
+
+       @media screen and (-webkit-min-device-pixel-ratio:0) {
+         @font-face {
+           font-family: "Flaticon";
+           src: url("../icon/Flaticon.svg#Flaticon") format("svg");
+         }
+       }
+
+       [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+       [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+         font-family: "Flaticon";
+         }
+
+         .flaticon-multimedia:before {
+            content: "\f10c";
+            font: 3em/1.8em "Flaticon";
+            display: inline-block;
+          	color: #26e6e6;
+          }
+         .flaticon-draw:before {
+            content: "\f10b";
+            font: 3em/1.8em "Flaticon";
+            display: inline-block;
+          	color: #26e6e6;
+          }
+          .flaticon-photo-1:before {
+             content: "\f10a";
+             font: 3em/1.8em "Flaticon";
+             display: inline-block;
+           	 color: #26e6e6;
+           }
+
+
+         .flaticon-internet:before {
+            content: "\f100";
+            height: 100%;
+            font: 3em/1em "Flaticon";
+            display: inline-block;
+            color: #26e6e6;
+           }
+         .flaticon-suitcase:before {
+            content: "\f102";
+            height: 100%;
+            font: 3em/1em "Flaticon";
+            display: inline-block;
+            color: #26e6e6;
+          }
+         .flaticon-photo:before {
+            content: "\f101";
+            height: 100%;
+            font: 3em/1em "Flaticon";
+            display: inline-block;
+            color: #26e6e6;
+          }
+
+
+
+
+         .flaticon-multimedia-1:before {
+           font: 3em/1.8em "Flaticon";
+           display: inline-block;
+           color: #26e6e6;
+            content: "\f106"; }
+         .flaticon-technology:before {
+           font: 3em/1.8em "Flaticon";
+           display: inline-block;
+           color: #26e6e6;
+            content: "\f109"; }
+
+         .flaticon-technology-1:before {
+           font: 3em/1.8em "Flaticon";
+           display: inline-block;
+           color: #26e6e6;
+            content: "\f104"; }
+
+         .flaticon-interface:before {
+           font: 3em/1.8em "Flaticon";
+           display: inline-block;
+           color: #26e6e6;
+            content: "\f107"; }
+
+         .flaticon-cart:before {
+           font: 3em/1.8em "Flaticon";
+           display: inline-block;
+           color: #26e6e6;
+            content: "\f103"; }
+
+         .flaticon-pie-chart:before {
+           font: 3em/1.8em "Flaticon";
+           display: inline-block;
+           color: #26e6e6;
+            content: "\f105"; }
+
+
+         .flaticon-cogwheel:before { content: "\f108"; }
